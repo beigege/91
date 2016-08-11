@@ -1,6 +1,8 @@
-package com.my.selenium2;
+package com.my.seleniumJunit4;
 
 import static org.junit.Assert.fail;
+
+import java.util.concurrent.TimeUnit;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
@@ -22,6 +24,7 @@ public class testBase {
 		options.addArguments("--start-maximized");
 		capabilities.setCapability(ChromeOptions.CAPABILITY, options);
 		driver = new ChromeDriver(capabilities);
+		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 	}
 
 	@AfterClass
