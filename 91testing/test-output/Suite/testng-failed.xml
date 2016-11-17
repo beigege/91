@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="c(failed)">
+    <classes>
+      <class name="com.my.testngstudy.TngTest1">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="afterTest"/>
+          <include name="afterSuite"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.my.testngstudy.TngTest1 -->
+      <class name="com.my.testngstudy.TngTest3">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.my.testngstudy.TngTest3 -->
+      <class name="com.my.testngstudy.TngTest2">
+        <methods>
+          <include name="f2"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.my.testngstudy.TngTest2 -->
+    </classes>
+  </test> <!-- c(failed) -->
+</suite> <!-- Failed suite [Suite] -->

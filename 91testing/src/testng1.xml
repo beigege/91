@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" >
+<!--preserve-order="true":suite标签中设置这个貌似对下面test的执行顺序没有影响，都是按照test的出现位置，从上到下执行  -->
+    
+<test name="c" preserve-order="true">
+    <!--preserve-order="true":test标签中设置这个貌似对下面class的执行顺序有影响，都是按照class的出现位置，从上到下执行 .
+    false:按照class name的字母顺序由小到大执行 -->
+    
+    <classes>
+      <class name="com.my.testngstudy.TngTest3" preserve-order="true">
+          <methods>
+				<include name="h3" />
+				<include name="g3" />
+			</methods>
+		</class>
+      <class name="com.my.testngstudy.TngTest2"/>
+    </classes>
+  </test> 
+ 
+  <test name="b">
+    <classes>
+      <class name="com.my.testngstudy.TngTest1"/>
+    </classes>
+  </test>  <!-- Test -->
+    
+</suite> <!-- Suite -->
